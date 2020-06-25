@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatabaseDataSet2" targetNamespace="http://tempuri.org/DatabaseDataSet2.xsd" xmlns:mstns="http://tempuri.org/DatabaseDataSet2.xsd" xmlns="http://tempuri.org/DatabaseDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DatabaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings._1C_Shop.Properties.Settings.GlobalReference.Default.DatabaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HistoryTableAdapter" GeneratorDataComponentClassName="HistoryTableAdapter" Name="History" UserDataComponentName="HistoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DatabaseConnectionString (Settings)" DbObjectName="dbo.History" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT product_and_price, total_paid, was_given, change, payment_method, by_user, time FROM dbo.History</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="product_and_price" DataSetColumn="product_and_price" />
+              <Mapping SourceColumn="total_paid" DataSetColumn="total_paid" />
+              <Mapping SourceColumn="was_given" DataSetColumn="was_given" />
+              <Mapping SourceColumn="change" DataSetColumn="change" />
+              <Mapping SourceColumn="payment_method" DataSetColumn="payment_method" />
+              <Mapping SourceColumn="by_user" DataSetColumn="by_user" />
+              <Mapping SourceColumn="time" DataSetColumn="time" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatabaseDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DatabaseDataSet2" msprop:Generator_UserDSName="DatabaseDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="History" msprop:Generator_TableClassName="HistoryDataTable" msprop:Generator_TableVarName="tableHistory" msprop:Generator_RowChangedName="HistoryRowChanged" msprop:Generator_TablePropName="History" msprop:Generator_RowDeletingName="HistoryRowDeleting" msprop:Generator_RowChangingName="HistoryRowChanging" msprop:Generator_RowEvHandlerName="HistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="HistoryRowDeleted" msprop:Generator_RowClassName="HistoryRow" msprop:Generator_UserTableName="History" msprop:Generator_RowEvArgName="HistoryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="product_and_price" msprop:Generator_ColumnVarNameInTable="columnproduct_and_price" msprop:Generator_ColumnPropNameInRow="product_and_price" msprop:Generator_ColumnPropNameInTable="product_and_priceColumn" msprop:Generator_UserColumnName="product_and_price">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="total_paid" msprop:Generator_ColumnVarNameInTable="columntotal_paid" msprop:Generator_ColumnPropNameInRow="total_paid" msprop:Generator_ColumnPropNameInTable="total_paidColumn" msprop:Generator_UserColumnName="total_paid" type="xs:double" />
+              <xs:element name="was_given" msprop:Generator_ColumnVarNameInTable="columnwas_given" msprop:Generator_ColumnPropNameInRow="was_given" msprop:Generator_ColumnPropNameInTable="was_givenColumn" msprop:Generator_UserColumnName="was_given" type="xs:double" />
+              <xs:element name="change" msprop:Generator_ColumnVarNameInTable="columnchange" msprop:Generator_ColumnPropNameInRow="change" msprop:Generator_ColumnPropNameInTable="changeColumn" msprop:Generator_UserColumnName="change" type="xs:double" />
+              <xs:element name="payment_method" msprop:Generator_ColumnVarNameInTable="columnpayment_method" msprop:Generator_ColumnPropNameInRow="payment_method" msprop:Generator_ColumnPropNameInTable="payment_methodColumn" msprop:Generator_UserColumnName="payment_method">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="by_user" msprop:Generator_ColumnVarNameInTable="columnby_user" msprop:Generator_ColumnPropNameInRow="by_user" msprop:Generator_ColumnPropNameInTable="by_userColumn" msprop:Generator_UserColumnName="by_user">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="time" msprop:Generator_ColumnVarNameInTable="columntime" msprop:Generator_ColumnPropNameInRow="time" msprop:Generator_ColumnPropNameInTable="timeColumn" msprop:Generator_UserColumnName="time" type="xs:dateTime" />
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
