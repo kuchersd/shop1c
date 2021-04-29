@@ -1,4 +1,7 @@
 # shop1c
+
+Now this is not an actual project. Its new and supported version: https://github.com/kuchersd/gastronom 
+
 1С Shop - это проект, созданный для контроля товарооборота в небольшом магазине.
 Создан на C# WinForms с локальной БД.
 Главные задачи для проекта: 
