@@ -1,4 +1,4 @@
-# shop1c
+# shop1c ( GASTRONOM v1 )
 
 Now this is not an actual project. Its new and supported version: https://github.com/kuchersd/gastronom 
 
